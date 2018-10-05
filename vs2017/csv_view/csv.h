@@ -14,6 +14,8 @@ private:
 	int		m_cols;
 	int		m_rows;
 	std::vector<std::vector<std::string>>	m_data;
+	std::map<std::string, int>	m_map_h;
+	std::map<std::string, int>	m_map_v;
 
 	int		get_idx(const std::string&legend, const std::map<std::string, int> legends_map) const {
 		if (legends_map.find(legend) == legends_map.end()) {
